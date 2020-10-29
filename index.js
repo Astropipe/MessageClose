@@ -1,4 +1,6 @@
 module.exports = function({ bot, utils, commands }) {
+    console.log("Deprecation Warning. Please use https://github.com/MMPlugins/CloseAddons");
+    console.log("Thanks -Eight8");
     commands.addInboxThreadCommand('messageclose', '[text$]',  async (msg, args, thread) => {
       if (! args.text && msg.attachments.length  === 0) {
         utils.postError(msg.channel, 'Text or Attachment is required');
