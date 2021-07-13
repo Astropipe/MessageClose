@@ -1,5 +1,5 @@
 module.exports = function({ bot, utils, commands }) {
-    console.log("Deprecation Warning. Please use https://github.com/MMPlugins/CloseAddons");
+    console.log("Deprecation Warning. The MessageClose repository is no longer updated an may not correctly function. Please use https://github.com/MMPlugins/CloseAddons");
     console.log("Thanks -Eight8");
     commands.addInboxThreadCommand('messageclose', '[text$]',  async (msg, args, thread) => {
       if (! args.text && msg.attachments.length  === 0) {
