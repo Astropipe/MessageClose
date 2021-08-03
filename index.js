@@ -19,7 +19,7 @@ module.exports = function({ bot, utils, commands }) {
       }
   
       const threadchanneltwo = await thread.getDMChannel();
-      bot.createMessage(threadchanneltwo.id, `Reason for thread closure: ${args.text}`, msg.attachments, false);
+      bot.createMessage(threadchanneltwo.id, `This ticket has been closed because of: ${args.text}`, msg.attachments, false);
       msg.delete();
       thread.close();
     });
